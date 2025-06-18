@@ -20,42 +20,56 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 100%;
+            padding: 2rem;
         }
 
         .container {
-            text-align: center;
-            padding: 1rem;
+            max-width: 800px;
+            text-align: left;
         }
 
-        img.logo {
+        .logo {
+            display: block;
+            margin: 0 auto 2rem auto;
             width: 96px;
             height: auto;
-            margin-bottom: 1rem;
         }
 
-        h1 {
-            font-size: 2rem;
+        h1,
+        h2,
+        h3 {
+            color: #ffffff;
+            margin-top: 1.5rem;
             margin-bottom: 0.5rem;
         }
 
-        p {
-            margin-bottom: 1.5rem;
+        p,
+        li {
             color: #aaaaaa;
+            margin-bottom: 1rem;
         }
 
         a {
-            display: inline-block;
-            margin: 0.5rem;
             color: #00afff;
             text-decoration: none;
-            font-weight: bold;
             border-bottom: 1px solid transparent;
             transition: border-color 0.2s;
         }
 
         a:hover {
             border-color: #00afff;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #444;
+            margin: 2rem 0;
         }
     </style>
 </head>
@@ -64,10 +78,44 @@
     <div class="container">
         <img src="images/prosialab.jpeg" alt="ProsiaLAB Logo" class="logo" />
         <h1>ProsiaLAB</h1>
-        <p>A knowledge base on planetary science and an attempt to unify protoplanetary disk simulation software.</p>
-        <a href="https://github.com/ProsiaLAB" target="_blank">GitHub</a>
-        <a href="https://prosialab.github.io/knowledge" target="_blank">Knowledge Base</a>
-    </div>
+        <p><strong>ProsiaLAB</strong> is a knowledge base on planetary science and an attempt to unify protoplanetary
+            disk simulation software.</p>
+
+        <hr />
+
+        <h2><a href="https://prosialab.github.io/knowledge" target="_blank">Knowledge Base</a></h2>
+        <p>Research notes compiled to increase my understanding of planetary science.</p>
+
+        <h2>Projects</h2>
+
+        <h3><a href="https://prosialab.github.io/kappa/kappa/" target="_blank">kappa</a></h3>
+        <p>Dust opacity calculator (implementation of <code>optool</code> in Rust, originally by <a
+                href="https://ui.adsabs.harvard.edu/abs/2021ascl.soft04010D" target="_blank">Dominik et al. 2021</a>).
+            <code>optool</code> is available on <a href="https://github.com/cdominik/optool" target="_blank">GitHub</a>.
+        </p>
+        <ul>
+            <li><a href="https://prosialab.github.io/kappa/kappa/" target="_blank">Documentation</a></li>
+            <li><a href="https://prosialab.github.io/kappa/book/" target="_blank">Book</a></li>
+            <li><a href="https://github.com/ProsiaLAB/kappa" target="_blank">Source Code</a></li>
+        </ul>
+
+        <h3><a href="https://prosialab.github.io/citrus/citrus/" target="_blank">citrus</a></h3>
+        <p>Implementation of <code>LIME</code> (LIne Modelling Engine) by <a
+                href="https://ui.adsabs.harvard.edu/abs/2010A&A...523A..25B/abstract" target="_blank">Brinch &
+                Hogerheijde, 2010</a>) in Rust. <code>LIME</code> is available on <a
+                href="https://github.com/lime-rt/lime" target="_blank">GitHub</a>.</p>
+        <ul>
+            <li><a href="https://prosialab.github.io/citrus/citrus/" target="_blank">Documentation</a></li>
+            <li><a href="https://prosialab.github.io/citrus/book/" target="_blank">Book</a></li>
+            <li><a href="https://github.com/ProsiaLAB/citrus" target="_blank">Source Code</a></li>
+        </ul>
+
+        <h3><a href="https://github.com/ProsiaLAB/spectre/" target="_blank">spectre</a></h3>
+        <p>Linelists, molecular transition databases, and astronomical spectrum utilities.</p>
+
+
+
 </body>
+</div>
 
 </html>
