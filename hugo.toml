@@ -1,0 +1,7 @@
+baseURL = 'https://prosialab.github.io/'
+languageCode = 'en-us'
+title = 'Prosia LAB'
+enableGitInfo = true
+
+[markup.goldmark.renderer]
+unsafe = true
