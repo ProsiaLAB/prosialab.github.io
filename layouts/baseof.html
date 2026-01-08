@@ -55,14 +55,7 @@
   {{ block "main" . }}{{ end }}
 </main>
 <div class="debug-grid"></div>
-<footer class="site-footer">
-  <p>
-    {{ with .Site.Params.footer }}
-      {{ . }}
-    {{ else }}
-      Experimental implementations, research tooling, and discarded ideas.
-    {{ end }}
-  </p>
+
 
   <p class="site-meta">
     Last updated <time>{{ .Lastmod.Format "2006-01-02" }}</time>
