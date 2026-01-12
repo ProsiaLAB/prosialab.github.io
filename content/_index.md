@@ -15,7 +15,7 @@ Code here is experimental, incomplete, and primarily written for understanding r
 Dust opacity calculator. A Rust re-implementation of [optool](https://github.com/cdominik/optool),
 originally by [Dominik et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ascl.soft04010D).
 
-- [Documentation](https://prosialab.github.io/kappa/docs/kappa/)
+- [Documentation](https://prosialab.github.io/documentation/kappa/)
 - [Book](https://prosialab.github.io/books/kappa/)
 - [GitHub](https://github.com/ProsiaLAB/kappa)
 
@@ -23,7 +23,7 @@ originally by [Dominik et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ascl.s
 
 Rust implementation of LIME (**LI**ne **M**odelling **E**ngine), originally by [Brinch & Hogerheijde, 2010](https://ui.adsabs.harvard.edu/abs/2010A&A...523A..25B/abstract).
 
-- [Documentation](https://prosialab.github.io/citrus/docs/citrus/)
+- [Documentation](https://prosialab.github.io/documentation/citrus/)
 - [Book](https://prosialab.github.io/books/citrus/)
 - [GitHub](https://github.com/ProsiaLAB/citrus)
 
