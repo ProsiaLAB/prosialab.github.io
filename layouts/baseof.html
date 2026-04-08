@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 
-<body>
+<body class="debug">
 
 <header class="site-header">
   <div class="brand">
@@ -48,9 +48,7 @@
     {{ end }}
   </nav>
 </header>
- <label class="debug-toggle-label">
-    <input type="checkbox" class="debug-toggle"> Debug mode
-  </label>
+
 <main class="site-main">
   {{ block "main" . }}{{ end }}
 </main>
